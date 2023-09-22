@@ -1,0 +1,83 @@
+* {
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+#main_container {
+    display: flex;
+    width: 500px;
+}
+
+
+#main_info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    border-radius: 10px 0 0 10px;
+}
+
+.perfume {
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.p_info {
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+    color: hsl(228, 12%, 48%);
+}
+
+.money_container {
+    display: flex;
+    align-items: center;
+}
+
+.Principal_money {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.secundary_money {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: inset 30px 30px 30px rgba(0, 0, 0, 0.304);
+}

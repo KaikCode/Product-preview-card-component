@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --color1: hsl(158, 36%, 37%);
+    --color2: hsl(30, 38%, 92%);
+    --color3: hsl(212, 21%, 14%);
+    --color4: hsl(228, 12%, 48%);
+    --color5: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: auto;
+}
+
+.main_container {
+    display: flex;
+    width: 650px;
+    height: 500px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--color5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.118);
+}
+
+.first_img {
+    border-radius: 10px 0 0 10px;
+}
+
+.main_info {
+    margin: 15px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--color4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.marca {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+}
+
+.p_info {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--color4);
+    padding: 20px 0 20px 0;
+    line-height: 25px;
+}
+
+.price_container {
+    display: flex;
+    align-items: center;
+}
+
+.primary_price {
+    color: var(--color1);
+    font-family: 'Fraunces', sans-serif;
+    font-size: xx-large;
+}
+
+.secundary_price {
+    color: var(--color4);
+    margin-left: 20px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center
+}
+
+.btn_cart {
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: var(--color5);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+}
+
+.btn_cart:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+}   
+
+@media screen and (max-width: 479px) {
+    .main_container {
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+    }
+    .first_img {
+        content: url(/images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+    .title {
+        padding-bottom: 10px
+    }
+    .main_info {
+        margin: 5px;
+        padding: 10px;
+    }
+    .marca {
+        font-size: 30px;
+    }
+    .p_info {
+        margin: 5px;
+        padding-top: 10px;
+    }
+    .btn_cart {
+        width: 300px;
+    }
+}
